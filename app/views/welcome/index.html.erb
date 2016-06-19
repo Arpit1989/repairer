@@ -1,0 +1,105 @@
+<!-- Stack the columns on mobile by making one full-width and the other half-width -->
+<div class="row">
+  <div class="col-xs-12 col-md-3">
+    <h2 style="color: white;margin-top: 0.5em;margin-bottom: 0px;text-align: center;">Choose the City</h2>
+  </div>
+  <div class="col-xs-12 col-md-3">
+    <div class="input-group margin-bottom-sm">
+      <select class="width_input form-control">
+        <option value="gurgaon">Gurgaon</option>
+        <option value="chandigarh">Chandigarh</option>
+      </select>
+    </div>
+  </div>
+  <div class="col-xs-12 col-md-3">
+    <div class="input-group margin-bottom-sm">
+        <%= select_tag "credit_card",options_for_select([ "sector 40", "sector 45","sector 57","sector 52" ], "sector 52"),:class =>"width_input form-control" %>
+    </div>
+  </div>
+  <div class="col-xs-12 col-md-3">
+    <div class="width_input input-group margin-bottom-sm">
+      <span class="input-group-addon"><i class="fa fa-phone-square fa-fw"></i></span>
+      <input class="form-control" type="text" placeholder="Your Phone Number">
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-xs-12 col-md-3">
+    <div class="first">
+          <h1 style="text-align: center;padding-top: 2em;color: white;margin-top: 0px;margin-bottom: 0px;"> Sofa Repair & dry Cleaning </h1>
+    </div>
+  </div>
+
+
+  <div class="col-xs-12 col-md-3">
+    <div class="second">
+      <h1 style="text-align: center;padding-top: 2em;color: white;margin-top: 0px;margin-bottom: 0px;">Air Conditioner Repair Services </h1>
+    </div>
+  </div>
+  <div class="col-xs-12 col-md-3">
+    <div class="third">
+      <h1 style="text-align: center;padding-top: 2em;color: white;margin-top: 0px;margin-bottom: 0px;">Carpenter </h1>
+    </div>
+  </div>
+  <div class="col-xs-12 col-md-3">
+    <div class="fourth">
+      <h1 style="text-align: center;padding-top: 2em;color: white;margin-top: 0px;margin-bottom: 0px;">Carpets </h1>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-xs-12 col-md-12">
+    <h1>You Demand for help , we deliver it through our services.</h1>
+  </div>
+</div>
+
+
+
+
+<div class="row">
+  <div class="col-xs-12 col-md-3">
+    <div class="fifth">
+      <h1 style="text-align: center;padding-top: 2em;color: white;margin-top: 0px;margin-bottom: 0px;"> Painter </h1>
+    </div>
+  </div>
+  <div class="col-xs-12 col-md-3">
+    <div class="sixth">
+      <h1 style="text-align: center;padding-top: 2em;color: white;margin-top: 0px;margin-bottom: 0px;"> Aluminium works </h1>
+    </div>
+  </div>
+  <div class="col-xs-12 col-md-3">
+    <div class="seventh">
+      <h1 style="text-align: center;padding-top: 2em;color: white;margin-top: 0px;margin-bottom: 0px;"> Plumber </h1>
+    </div>
+  </div>
+  <div class="col-xs-12 col-md-3">
+    <div class="eighth">
+      <h1 style="text-align: center;padding-top: 2em;color: white;margin-top: 0px;margin-bottom: 0px;"> Steel Fabricator </h1>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12 col-md-3">
+    <div class="ninth">
+      <h1 style="text-align: center;padding-top: 2em;color: white;margin-top: 0px;margin-bottom: 0px;"> Other Services </h1>
+    </div>
+  </div>
+  <div class="col-xs-12 col-md-3">
+    <div class="tenth">
+      <h1 style="text-align: center;padding-top: 2em;color: white;margin-top: 0px;margin-bottom: 0px;"> Office Chairs </h1>
+    </div>
+  </div>
+  <div class="col-xs-12 col-md-3">
+    <div class="twelfth">
+      <h1 style="text-align: center;padding-top: 2em;color: white;margin-top: 0px;margin-bottom: 0px;"> Model Kitchen </h1>
+    </div>
+  </div>
+  <div class="col-xs-12 col-md-3">
+    <div class="thirteenth">
+      <h1 style="text-align: center;padding-top: 2em;color: white;margin-top: 0px;margin-bottom: 0px;"> Welding Services </h1>
+    </div>
+  </div>
+  <%= render :partial => "open_modal_window", :locals => { :name => "david" } %>
+</div>

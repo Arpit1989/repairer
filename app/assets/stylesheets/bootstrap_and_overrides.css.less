@@ -1,0 +1,273 @@
+@import "twitter/bootstrap/bootstrap";
+
+// Set correct font paths
+@glyphiconsEotPath: font-url("glyphicons-halflings-regular.eot");
+@glyphiconsEotPath_iefix: font-url("glyphicons-halflings-regular.eot?#iefix");
+@glyphiconsWoffPath: font-url("glyphicons-halflings-regular.woff");
+@glyphiconsTtfPath: font-url("glyphicons-halflings-regular.ttf");
+@glyphiconsSvgPath: font-url("glyphicons-halflings-regular.svg#glyphicons_halflingsregular");
+
+// Set the Font Awesome (Font Awesome is default. You can disable by commenting below lines)
+@fontAwesomeEotPath: font-url("fontawesome-webfont.eot");
+@fontAwesomeEotPath_iefix: font-url("fontawesome-webfont.eot?#iefix");
+@fontAwesomeWoffPath: font-url("fontawesome-webfont.woff");
+@fontAwesomeTtfPath: font-url("fontawesome-webfont.ttf");
+@fontAwesomeSvgPath: font-url("fontawesome-webfont.svg#fontawesomeregular");
+
+// Font Awesome
+@import "fontawesome/font-awesome";
+
+// Glyphicons
+//@import "twitter/bootstrap/glyphicons.less";
+
+// Your custom LESS stylesheets goes here
+//
+// Since bootstrap was imported above you have access to its mixins which
+// you may use and inherit here
+//
+// If you'd like to override bootstrap's own variables, you can do so here as well
+// See http://twitter.github.com/bootstrap/customize.html#variables for their names and documentation
+//
+// Example:
+// @link-color: #ff0000;
+.navbar-default {
+  #grad
+}
+.navbar-default .navbar-brand {
+  color: #FFFFFF;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  color: #FFFFFF;
+  background-color: #8c4646;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #FFFFFF;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  color: white;
+  background-color: transparent;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+  background-color: #8c4646;
+  color: #FFFFFF;
+}
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.navbar-default {
+  background: #8c4646;
+  background: -webkit-linear-gradient(#000000, #423434);
+  background: -o-linear-gradient(#000000, #423434);
+  background: -moz-linear-gradient(#000000, #423434);
+  background: linear-gradient(#8C4646, #8c4646);
+  border-color: #2F2F2F;
+}
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 160px;
+  padding: 5px 0;
+  margin: 2px 0 0;
+  list-style: none;
+  font-size: 14px;
+  text-align: left;
+  background-color: #8C4646;
+  border: 1px solid #8C4646;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  background-clip: padding-box;
+}
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+  text-decoration: none;
+  color: #0A0A0A;
+  background-color: #8C4646;
+}
+.dropdown-menu > li > a {
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  font-weight: normal;
+  line-height: 1.42857143;
+  color: #FFFFFF;
+  white-space: nowrap;
+}
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333333;
+  background-color: #353535;
+}
+
+select.width_input.form-control{
+  width: 23em;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+div.width_input.input-group.margin-bottom-sm{
+  width: 23em;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+#grad {
+  background: #8c4646; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#000000, #8c4646); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#000000, #8c4646); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#000000, #8c4646); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#8c4646, #8c4646); /* Standard syntax */
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #FFFDFD;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color: #8C4646;
+}
+
+div.first {
+    background-color: #588C7E;
+    min-width: inherit;
+    min-height: 15em;
+    box-shadow: 1em 1em 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+ }
+div.first:hover{
+  box-shadow: 0.1em 0.1em 0.1em 0.1em #588C7E;
+}
+
+div.second{
+  background-color: #F2E394;
+  min-width: inherit;
+  min-height: 15em;
+  box-shadow: 1em 1em 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+div.second:hover{
+  box-shadow: 0.1em 0.1em 0.1em 0.1em #F2E394;
+}
+
+div.third{
+  background-color: #F2AE72;
+  min-width: inherit;
+  min-height: 15em;
+  box-shadow: 1em 1em 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+div.third:hover{
+  box-shadow: 0.1em 0.1em 0.1em 0.1em #F2AE72;
+}
+div.fourth{
+  background-color: #D96459;
+  min-width: inherit;
+  min-height: 15em;
+  box-shadow: 1em 1em 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+div.fourth:hover{
+  box-shadow: 0.1em 0.1em 0.1em 0.1em #D96459;
+}
+div.fifth{
+  background-color: #F17D80;
+  min-width: inherit;
+  min-height: 15em;
+  box-shadow: 1em 1em 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+div.fifth:hover{
+  box-shadow: 0.1em 0.1em 0.1em 0.1em #F17D80;
+}
+div.sixth{
+  background-color: #737495;
+  min-width: inherit;
+  min-height: 15em;
+  box-shadow: 1em 1em 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+div.sixth:hover{
+  box-shadow: 0.1em 0.1em 0.1em 0.1em #737495;
+}
+div.seventh{
+  background-color: #68A8AD;
+  min-width: inherit;
+  min-height: 15em;
+  box-shadow: 1em 1em 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+div.seventh:hover{
+  box-shadow: 0.1em 0.1em 0.1em 0.1em #68A8AD;
+}
+div.eighth{
+  background-color: #C4D4AF;
+  min-width: inherit;
+  min-height: 15em;
+  box-shadow: 1em 1em 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+div.eighth:hover{
+  box-shadow: 0.1em 0.1em 0.1em 0.1em #C4D4AF;
+}
+div.ninth{
+  background-color: #DE4D4E;
+  min-width: inherit;
+  min-height: 15em;
+  box-shadow: 1em 1em 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+div.ninth:hover{
+  box-shadow: 0.1em 0.1em 0.1em 0.1em #DE4D4E;
+}
+div.tenth{
+  background-color: #DA4624;
+  min-width: inherit;
+  min-height: 15em;
+  box-shadow: 1em 1em 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+div.tenth:hover{
+  box-shadow: 0.1em 0.1em 0.1em 0.1em #DA4624;
+}
+div.twelfth{
+  background-color: #FFD041;
+  min-width: inherit;
+  min-height: 15em;
+  box-shadow: 1em 1em 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+div.twelfth:hover{
+  box-shadow: 0.1em 0.1em 0.1em 0.1em #FFD041;
+}
+div.thirteenth{
+  background-color: #6E9ECF;
+  min-width: inherit;
+  min-height: 15em;
+  box-shadow: 1em 1em 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+div.thirteenth:hover{
+  box-shadow: 0.1em 0.1em 0.1em 0.1em #6E9ECF;
+}
+.navbar-brand{
+  padding-top: 0px;
+}
