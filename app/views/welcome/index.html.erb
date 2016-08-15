@@ -1,28 +1,44 @@
+<% set_meta_tags site: 'Demand for Help', title: 'Demand 4 Help', reverse: true %>
+<% set_meta_tags description: " All kind of Services in Gurgaon Haryana like plumber, carpenter,sofa repair, new sofa, welding, air conditioners,carpets" %>
+<% set_meta_tags keywords: %w[demand help gurgaon haryana sector sohna road dlf phase south city wazirabad sofa repair new dry cleaning air conditioner ac carpenter painter plumber welding home service office Amritsari Irani Iraqi Afghani Indian Carpets] %>
 <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+<%= form_tag "/",method: "get", remote: true,:id => "html5Form",class: "form-horizontal" do %>
 <div class="row">
   <div class="col-xs-12 col-md-3">
-    <h2 style="color: white;margin-top: 0.5em;margin-bottom: 0px;text-align: center;">Choose the City</h2>
-  </div>
-  <div class="col-xs-12 col-md-3">
-    <div class="input-group margin-bottom-sm">
-      <select class="width_input form-control">
-        <option value="gurgaon">Gurgaon</option>
-        <option value="chandigarh">Chandigarh</option>
-      </select>
-    </div>
-  </div>
-  <div class="col-xs-12 col-md-3">
-    <div class="input-group margin-bottom-sm">
-        <%= select_tag "credit_card",options_for_select([ "sector 40", "sector 45","sector 57","sector 52" ], "sector 52"),:class =>"width_input form-control" %>
-    </div>
+    <h1 style="color: white;margin-top: 0.5em;margin-bottom: 0px;text-align: center;">Choose the City</h1>
   </div>
   <div class="col-xs-12 col-md-3">
     <div class="width_input input-group margin-bottom-sm">
       <span class="input-group-addon"><i class="fa fa-phone-square fa-fw"></i></span>
-      <input class="form-control" type="text" placeholder="Your Phone Number">
+      <%= text_field_tag 'phone_number',nil,:class => "form-control", max: 10,min: 10, pattern: "[7-9]{1}[0-9]{9}",title: "Only 10 Digit Phone Numbers of India are allowed", placeholder: "Your Phone Number",required: true %>
+    </div>
+  </div>
+  <div class="col-xs-12 col-md-3">
+    <div class="input-group margin-bottom-sm">
+      <%= select_tag "city",options_for_select(["Gurgaon"], "Gurgaon"),:class =>"width_input form-control" %>
+    </div>
+  </div>
+  <div class="col-xs-12 col-md-3">
+    <div class="input-group margin-bottom-sm">
+      <%= select_tag "sectors",options_for_select(["sector 14","sector 15","sector 16","sector 17","sector 18","sector 19","sector 22", "sector 23","sector 21","sector 27","sector 28","sector 29","sector 30", "sector 31","sector 33","sector 32","sector 34", "sector 35","sector 36","sector 37","sector 38", "sector 39","sector 40", "sector 41","sector 42","sector 43","sector 44", "sector 45","sector 46","sector 47","sector 48", "sector 49","sector 50","sector 51","sector 52", "sector 53","sector 54","sector 55","sector 56", "sector 57","sector 58","sector 59","sector 62","sector 63", "sector 64","sector 65","sector 66","sector 81", "sector 82","sector 83","sector 84","Sohna Road","Wazirabad","DLF Phase 1","DLF Phase 2","DLF Phase 3","DLF Phase 4","DLF Phase 5","Ghata Village","M.G.Road","Sikanderpur","Chakkarpur","Islampur","Badshahpur","Maruti Kunj"], "sector 52"),:class =>"width_input form-control" %>
     </div>
   </div>
 </div>
+
+<div class="row">
+  <div class="col-xs-12 col-md-4">
+  </div>
+  <div class="col-xs-12 col-md-4">
+    <h1 style="text-align: center;color: white">You Demand for help <i class="fa fa-bell fa-lg" aria-hidden="true"></i></h1>
+    <%= submit_tag "Get Helped!",class: "submit_phone btn btn-primary" %>
+    <h3 style="text-align: center;color: white"> We deliver it through our services</h3>
+
+  </div>
+  <div class="col-xs-12 col-md-4">
+  </div>
+</div>
+<% end %>
+
 
 <div class="row">
   <div class="col-xs-12 col-md-3">
@@ -39,7 +55,7 @@
   </div>
   <div class="col-xs-12 col-md-3">
     <div class="third">
-      <h1 style="text-align: center;padding-top: 2em;color: white;margin-top: 0px;margin-bottom: 0px;">Carpenter </h1>
+      <h1 style="text-align: center;padding-top: 2em;color: white;margin-top: 0px;margin-bottom: 0px;">Carpenter & Office Chairs </h1>
     </div>
   </div>
   <div class="col-xs-12 col-md-3">
@@ -53,15 +69,12 @@
   <div class="col-xs-12 col-md-4">
   </div>
   <div class="col-xs-12 col-md-4">
-    <h1 style="text-align: center;color: white">You Demand for help <i class="fa fa-bell fa-lg" aria-hidden="true"></i></h1>
-    <h3 style="text-align: center;color: white"> We deliver it through our services</h3>
+    <h2 style="text-align: center;color: white">Call Now At </h2>
+    <h1 style="text-align: center;color: white"><i class="fa fa-phone fa-lg" aria-hidden="true"></i> +91- 98 99 362008</h1>
   </div>
   <div class="col-xs-12 col-md-4">
   </div>
 </div>
-
-
-
 
 <div class="row">
   <div class="col-xs-12 col-md-3">
@@ -81,44 +94,11 @@
   </div>
   <div class="col-xs-12 col-md-3">
     <div class="eighth">
-      <h1 style="text-align: center;padding-top: 2em;color: white;margin-top: 0px;margin-bottom: 0px;"> Steel Fabricator </h1>
+      <h1 style="text-align: center;padding-top: 2em;color: white;margin-top: 0px;margin-bottom: 0px;"> Steel Fabricator & Welding </h1>
     </div>
   </div>
 </div>
 
-<div class="row">
-  <div class="col-xs-12 col-md-4">
-  </div>
-  <div class="col-xs-12 col-md-4">
-    <h2 style="text-align: center;color: white">Call Now At </h2>
-    <h1 style="text-align: center;color: white"><i class="fa fa-phone fa-lg" aria-hidden="true"></i> +91- 98 99 362008</h1>
-  </div>
-  <div class="col-xs-12 col-md-4">
-  </div>
-</div>
-
-
-<div class="row">
-  <div class="col-xs-12 col-md-3">
-    <div class="ninth">
-      <h1 style="text-align: center;padding-top: 2em;color: white;margin-top: 0px;margin-bottom: 0px;"> Other Services </h1>
-    </div>
-  </div>
-  <div class="col-xs-12 col-md-3">
-    <div class="tenth">
-      <h1 style="text-align: center;padding-top: 2em;color: white;margin-top: 0px;margin-bottom: 0px;"> Office Chairs </h1>
-    </div>
-  </div>
-  <div class="col-xs-12 col-md-3">
-    <div class="twelfth">
-      <h1 style="text-align: center;padding-top: 2em;color: white;margin-top: 0px;margin-bottom: 0px;"> Model Kitchen </h1>
-    </div>
-  </div>
-  <div class="col-xs-12 col-md-3">
-    <div class="thirteenth">
-      <h1 style="text-align: center;padding-top: 2em;color: white;margin-top: 0px;margin-bottom: 0px;"> Welding Services </h1>
-    </div>
-  </div>
   <%= render :partial => "demand_sofa", :locals => { :name => "" } %>
   <%= render :partial => "demand_air_conditioner", :locals => { :name => "" } %>
   <%= render :partial => "demand_alumnium", :locals => { :name => "" } %>
