@@ -1,8 +1,8 @@
 Service Request Received from Phone Number <%= @user[:phone_number] %>
 ===============================================
 
-Address of the Requestor is <%="City: " + @user[:city] + " Sector: "+ @user[:sectors] %>
-
+Address of the Requestor is <%="City: " + (@user[:city].nil? ? "Gurgaon" : @user[:city]) + " Sector: "+ (@user[:sectors].nil? ? "Sector Not Selected by User" : @user[:sectors]) %>
+Enquiry About <%= (eval(@user[:page]).nil? ? "No service selected" : eval(@user[:page])[:value]) %>
 Please Call the Requestor As soon as possible!.
 
 Thanks

@@ -5,7 +5,8 @@
 </head>
 <body>
 <h1>Service Request Received from Phone Number <%= @user[:phone_number] %></h1>
-<p>Address of the Requestor is <%="City: " + @user[:city] + " Sector: "+ @user[:sectors] %></p>
+<p>Address of the Requestor is <%="City: " + (@user[:city].nil? ? "Gurgaon" : @user[:city]) + " Sector: "+ (@user[:sectors].nil? ? "Sector Not Selected by User" : @user[:sectors]) %></p>
+<p>Enquiry About <%= (eval(@user[:page]).nil? ? "No service selected" : eval(@user[:page])[:value]) %></p>
 <p>Please Call the Requestor As soon as possible!.
 </p>
 <p>Thanks</p>

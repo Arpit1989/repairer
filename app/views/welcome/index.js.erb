@@ -1,0 +1,5 @@
+<% if flash[:success] %>
+$("#flash_msg").html("<%= escape_javascript (raw(flash[:success]))%>");
+<% else %>
+$("#flash_msg").html("<%= escape_javascript (raw(flash[:error]))%>");
+<% end %>

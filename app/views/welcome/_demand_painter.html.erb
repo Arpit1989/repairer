@@ -29,8 +29,15 @@
         </ul>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Demand Help!</button>
+        <%= form_tag "/",method: "get", remote: true,:id => "html5Form",class: "form-horizontal" do %>
+            <div class="width_input input-group margin-bottom-sm">
+              <span class="input-group-addon"><i class="fa fa-phone-square fa-fw"></i></span>
+              <%= text_field_tag 'phone_number',nil,:class => "form-control", max: 10,min: 10, pattern: "[7-9]{1}[0-9]{9}",title: "Only 10 Digit Phone Numbers of India are allowed", placeholder: "Your Phone Number",required: true %>
+              <%= hidden_field_tag 'page',value: "Painter required" %>
+            </div>
+            <button type="button" class="btn btn-default modal_button" data-dismiss="modal">Close</button>
+            <%= submit_tag "Demand Help!",class: "modal_button btn btn-primary"  %>
+        <% end %>
       </div>
     </div>
   </div>
